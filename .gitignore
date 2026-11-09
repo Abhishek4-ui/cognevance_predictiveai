@@ -12,3 +12,5 @@ dist/
 .DS_Store
 .env
 ml_engine/models/*.tmp
+.vercel
+.env*
