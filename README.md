@@ -18,6 +18,8 @@
 
 ### 🌐 Live Public Deployment:
 * **Live Website (Cloud Deployed):** [https://predictai-pro.vercel.app](https://predictai-pro.vercel.app)
+* **Live Production API (Render):** [https://predictai-backend-f13z.onrender.com](https://predictai-backend-f13z.onrender.com)
+* **Live Swagger API Docs:** [https://predictai-backend-f13z.onrender.com/docs](https://predictai-backend-f13z.onrender.com/docs)
 * **GitHub Repository:** [https://github.com/Abhishek4-ui/cognevance_predictiveai](https://github.com/Abhishek4-ui/cognevance_predictiveai)
 
 ---

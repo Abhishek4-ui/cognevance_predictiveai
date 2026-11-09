@@ -2385,6 +2385,338 @@
       "pipeline_path": "ml_engine/models/customer_churn_model_1.0.0_1794202971_pipeline.joblib",
       "created_at": "2026-11-09T05:42:51Z",
       "total_inferences": 0
+    },
+    {
+      "model_id": "house_price_forecaster_1.0.0_1794203411",
+      "model_name": "House Price Forecaster",
+      "version": "1.0.0",
+      "task_type": "regression",
+      "algorithm": "random_forest_regressor",
+      "stage": "production",
+      "metrics": {
+        "mae": 0.2862,
+        "mse": 0.1279,
+        "rmse": 0.3576,
+        "r2": 0.928,
+        "adjusted_r2": 0.9247,
+        "residual_mean": 0.0561,
+        "residual_std": 0.3532,
+        "actual_vs_predicted_samples": [
+          {
+            "index": 138,
+            "actual": 5.215,
+            "predicted": 5.392,
+            "residual": -0.177
+          },
+          {
+            "index": 10,
+            "actual": 3.064,
+            "predicted": 3.348,
+            "residual": -0.284
+          },
+          {
+            "index": 124,
+            "actual": 4.14,
+            "predicted": 3.633,
+            "residual": 0.507
+          },
+          {
+            "index": 125,
+            "actual": 6.083,
+            "predicted": 5.378,
+            "residual": 0.705
+          },
+          {
+            "index": 56,
+            "actual": 4.542,
+            "predicted": 3.611,
+            "residual": 0.931
+          },
+          {
+            "index": 61,
+            "actual": 5.519,
+            "predicted": 5.302,
+            "residual": 0.217
+          },
+          {
+            "index": 128,
+            "actual": 5.416,
+            "predicted": 5.715,
+            "residual": -0.299
+          },
+          {
+            "index": 119,
+            "actual": 5.309,
+            "predicted": 4.814,
+            "residual": 0.495
+          },
+          {
+            "index": 90,
+            "actual": 4.934,
+            "predicted": 4.634,
+            "residual": 0.3
+          },
+          {
+            "index": 93,
+            "actual": 2.477,
+            "predicted": 2.065,
+            "residual": 0.412
+          },
+          {
+            "index": 105,
+            "actual": 4.943,
+            "predicted": 5.157,
+            "residual": -0.214
+          },
+          {
+            "index": 48,
+            "actual": 1.916,
+            "predicted": 1.699,
+            "residual": 0.217
+          },
+          {
+            "index": 108,
+            "actual": 4.754,
+            "predicted": 4.503,
+            "residual": 0.251
+          },
+          {
+            "index": 42,
+            "actual": 2.276,
+            "predicted": 2.166,
+            "residual": 0.11
+          },
+          {
+            "index": 53,
+            "actual": 4.1,
+            "predicted": 4.741,
+            "residual": -0.641
+          },
+          {
+            "index": 129,
+            "actual": 6.389,
+            "predicted": 6.141,
+            "residual": 0.248
+          },
+          {
+            "index": 26,
+            "actual": 2.194,
+            "predicted": 2.749,
+            "residual": -0.555
+          },
+          {
+            "index": 87,
+            "actual": 5.144,
+            "predicted": 4.736,
+            "residual": 0.408
+          },
+          {
+            "index": 83,
+            "actual": 1.562,
+            "predicted": 1.721,
+            "residual": -0.159
+          },
+          {
+            "index": 113,
+            "actual": 4.93,
+            "predicted": 4.629,
+            "residual": 0.301
+          },
+          {
+            "index": 18,
+            "actual": 3.613,
+            "predicted": 3.717,
+            "residual": -0.104
+          },
+          {
+            "index": 4,
+            "actual": 5.085,
+            "predicted": 5.165,
+            "residual": -0.08
+          },
+          {
+            "index": 74,
+            "actual": 6.114,
+            "predicted": 6.012,
+            "residual": 0.102
+          },
+          {
+            "index": 136,
+            "actual": 2.468,
+            "predicted": 2.445,
+            "residual": 0.023
+          },
+          {
+            "index": 80,
+            "actual": 4.962,
+            "predicted": 4.009,
+            "residual": 0.953
+          },
+          {
+            "index": 34,
+            "actual": 2.708,
+            "predicted": 2.203,
+            "residual": 0.505
+          },
+          {
+            "index": 133,
+            "actual": 4.26,
+            "predicted": 4.615,
+            "residual": -0.355
+          },
+          {
+            "index": 95,
+            "actual": 4.204,
+            "predicted": 3.768,
+            "residual": 0.436
+          },
+          {
+            "index": 15,
+            "actual": 1.918,
+            "predicted": 1.827,
+            "residual": 0.091
+          },
+          {
+            "index": 50,
+            "actual": 2.981,
+            "predicted": 3.193,
+            "residual": -0.212
+          },
+          {
+            "index": 33,
+            "actual": 3.056,
+            "predicted": 2.923,
+            "residual": 0.133
+          },
+          {
+            "index": 2,
+            "actual": 5.277,
+            "predicted": 4.566,
+            "residual": 0.711
+          },
+          {
+            "index": 8,
+            "actual": 6.134,
+            "predicted": 6.042,
+            "residual": 0.092
+          },
+          {
+            "index": 28,
+            "actual": 5.404,
+            "predicted": 5.506,
+            "residual": -0.102
+          },
+          {
+            "index": 17,
+            "actual": 3.557,
+            "predicted": 3.256,
+            "residual": 0.301
+          },
+          {
+            "index": 139,
+            "actual": 3.142,
+            "predicted": 3.171,
+            "residual": -0.029
+          },
+          {
+            "index": 99,
+            "actual": 2.215,
+            "predicted": 2.837,
+            "residual": -0.622
+          },
+          {
+            "index": 13,
+            "actual": 4.927,
+            "predicted": 5.229,
+            "residual": -0.302
+          },
+          {
+            "index": 5,
+            "actual": 3.884,
+            "predicted": 4.307,
+            "residual": -0.423
+          },
+          {
+            "index": 96,
+            "actual": 3.33,
+            "predicted": 3.668,
+            "residual": -0.338
+          },
+          {
+            "index": 88,
+            "actual": 2.967,
+            "predicted": 2.98,
+            "residual": -0.013
+          },
+          {
+            "index": 64,
+            "actual": 4.54,
+            "predicted": 4.645,
+            "residual": -0.105
+          },
+          {
+            "index": 100,
+            "actual": 2.771,
+            "predicted": 3.093,
+            "residual": -0.322
+          },
+          {
+            "index": 39,
+            "actual": 3.992,
+            "predicted": 4.634,
+            "residual": -0.642
+          },
+          {
+            "index": 131,
+            "actual": 2.992,
+            "predicted": 2.692,
+            "residual": 0.3
+          },
+          {
+            "index": 104,
+            "actual": 2.444,
+            "predicted": 2.055,
+            "residual": 0.389
+          },
+          {
+            "index": 78,
+            "actual": 5.646,
+            "predicted": 5.488,
+            "residual": 0.158
+          },
+          {
+            "index": 86,
+            "actual": 4.358,
+            "predicted": 4.833,
+            "residual": -0.475
+          },
+          {
+            "index": 65,
+            "actual": 6.17,
+            "predicted": 5.767,
+            "residual": 0.403
+          },
+          {
+            "index": 68,
+            "actual": 3.636,
+            "predicted": 3.86,
+            "residual": -0.224
+          }
+        ],
+        "summary_metric": 0.928
+      },
+      "features": [
+        "median_income",
+        "house_age",
+        "average_rooms",
+        "average_bedrooms",
+        "population",
+        "average_occupancy"
+      ],
+      "model_path": "ml_engine/models/house_price_forecaster_1.0.0_1794203411.joblib",
+      "pipeline_path": "ml_engine/models/house_price_forecaster_1.0.0_1794203411_pipeline.joblib",
+      "created_at": "2026-11-09T05:50:11Z",
+      "total_inferences": 0
     }
   ]
 }

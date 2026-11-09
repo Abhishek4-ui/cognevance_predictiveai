@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/api/(.*)",
-      "destination": "https://predictai-backend.onrender.com/api/$1"
+      "destination": "https://predictai-backend-f13z.onrender.com/api/$1"
     },
     {
       "source": "/(.*)",
