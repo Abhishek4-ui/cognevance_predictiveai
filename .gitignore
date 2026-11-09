@@ -1,0 +1,14 @@
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+*.db
+*.sqlite3
+predictai.db*
+node_modules/
+dist/
+.DS_Store
+.env
+ml_engine/models/*.tmp

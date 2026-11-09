@@ -1,0 +1,46 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:15-alpine
+    container_name: predictai_db
+    restart: always
+    environment:
+      POSTGRES_USER: predictai
+      POSTGRES_PASSWORD: predictaipassword2026
+      POSTGRES_DB: predictai_pro
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  backend:
+    build: .
+    container_name: predictai_backend
+    restart: always
+    depends_on:
+      - db
+    environment:
+      DATABASE_URL: "postgresql://predictai:predictaipassword2026@db:5432/predictai_pro"
+      ENVIRONMENT: "production"
+      SECRET_KEY: "predictai-docker-secret-key-production-level3-2026"
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./datasets:/app/datasets
+      - ./ml_engine/models:/app/ml_engine/models
+
+  frontend:
+    image: node:20-alpine
+    container_name: predictai_frontend
+    working_dir: /app
+    volumes:
+      - ./frontend:/app
+    ports:
+      - "5173:5173"
+    command: sh -c "npm install && npm run dev -- --host"
+    depends_on:
+      - backend
+
+volumes:
+  postgres_data:

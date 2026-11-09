@@ -1,0 +1,2390 @@
+{
+  "models": [
+    {
+      "model_id": "customer_churn_predictor_1.0.0_1794201714",
+      "model_name": "Customer Churn Predictor",
+      "version": "1.0.0",
+      "task_type": "classification",
+      "algorithm": "xgboost",
+      "stage": "production",
+      "metrics": {
+        "accuracy": 0.68,
+        "precision": 0.6654,
+        "recall": 0.68,
+        "f1_score": 0.6717,
+        "roc_auc": 0.6655,
+        "confusion_matrix": [
+          {
+            "actual": "0",
+            "predicted": "0",
+            "count": 88
+          },
+          {
+            "actual": "0",
+            "predicted": "1",
+            "count": 21
+          },
+          {
+            "actual": "1",
+            "predicted": "0",
+            "count": 27
+          },
+          {
+            "actual": "1",
+            "predicted": "1",
+            "count": 14
+          }
+        ],
+        "confusion_matrix_raw": [
+          [
+            88,
+            21
+          ],
+          [
+            27,
+            14
+          ]
+        ],
+        "classification_report": {
+          "0": {
+            "precision": 0.7652173913043478,
+            "recall": 0.8073394495412844,
+            "f1-score": 0.7857142857142857,
+            "support": 109.0
+          },
+          "1": {
+            "precision": 0.4,
+            "recall": 0.34146341463414637,
+            "f1-score": 0.3684210526315789,
+            "support": 41.0
+          },
+          "accuracy": 0.68,
+          "macro avg": {
+            "precision": 0.5826086956521739,
+            "recall": 0.5744014320877154,
+            "f1-score": 0.5770676691729323,
+            "support": 150.0
+          },
+          "weighted avg": {
+            "precision": 0.6653913043478261,
+            "recall": 0.68,
+            "f1-score": 0.6716541353383458,
+            "support": 150.0
+          }
+        },
+        "summary_metric": 0.6717
+      },
+      "features": [
+        "tenure_months",
+        "contract_type",
+        "internet_service",
+        "tech_support",
+        "monthly_charges",
+        "total_charges"
+      ],
+      "model_path": "ml_engine/models/customer_churn_predictor_1.0.0_1794201714.joblib",
+      "pipeline_path": "ml_engine/models/customer_churn_predictor_1.0.0_1794201714_pipeline.joblib",
+      "created_at": "2026-11-09T05:21:54Z",
+      "total_inferences": 0
+    },
+    {
+      "model_id": "house_price_forecaster_1.0.0_1794201714",
+      "model_name": "House Price Forecaster",
+      "version": "1.0.0",
+      "task_type": "regression",
+      "algorithm": "random_forest_regressor",
+      "stage": "staging",
+      "metrics": {
+        "mae": 0.2862,
+        "mse": 0.1279,
+        "rmse": 0.3576,
+        "r2": 0.928,
+        "adjusted_r2": 0.9247,
+        "residual_mean": 0.0561,
+        "residual_std": 0.3532,
+        "actual_vs_predicted_samples": [
+          {
+            "index": 46,
+            "actual": 2.222,
+            "predicted": 2.037,
+            "residual": 0.185
+          },
+          {
+            "index": 33,
+            "actual": 3.056,
+            "predicted": 2.923,
+            "residual": 0.133
+          },
+          {
+            "index": 108,
+            "actual": 4.754,
+            "predicted": 4.503,
+            "residual": 0.251
+          },
+          {
+            "index": 38,
+            "actual": 5.229,
+            "predicted": 4.834,
+            "residual": 0.395
+          },
+          {
+            "index": 2,
+            "actual": 5.277,
+            "predicted": 4.566,
+            "residual": 0.711
+          },
+          {
+            "index": 40,
+            "actual": 4.118,
+            "predicted": 3.716,
+            "residual": 0.402
+          },
+          {
+            "index": 5,
+            "actual": 3.884,
+            "predicted": 4.307,
+            "residual": -0.423
+          },
+          {
+            "index": 135,
+            "actual": 6.552,
+            "predicted": 6.542,
+            "residual": 0.01
+          },
+          {
+            "index": 125,
+            "actual": 6.083,
+            "predicted": 5.378,
+            "residual": 0.705
+          },
+          {
+            "index": 54,
+            "actual": 5.53,
+            "predicted": 5.721,
+            "residual": -0.191
+          },
+          {
+            "index": 11,
+            "actual": 4.361,
+            "predicted": 4.475,
+            "residual": -0.114
+          },
+          {
+            "index": 39,
+            "actual": 3.992,
+            "predicted": 4.634,
+            "residual": -0.642
+          },
+          {
+            "index": 114,
+            "actual": 5.316,
+            "predicted": 5.316,
+            "residual": 0.0
+          },
+          {
+            "index": 119,
+            "actual": 5.309,
+            "predicted": 4.814,
+            "residual": 0.495
+          },
+          {
+            "index": 9,
+            "actual": 4.495,
+            "predicted": 4.235,
+            "residual": 0.26
+          },
+          {
+            "index": 75,
+            "actual": 3.848,
+            "predicted": 4.051,
+            "residual": -0.203
+          },
+          {
+            "index": 14,
+            "actual": 2.836,
+            "predicted": 2.765,
+            "residual": 0.071
+          },
+          {
+            "index": 27,
+            "actual": 5.531,
+            "predicted": 4.988,
+            "residual": 0.543
+          },
+          {
+            "index": 58,
+            "actual": 3.613,
+            "predicted": 4.171,
+            "residual": -0.558
+          },
+          {
+            "index": 100,
+            "actual": 2.771,
+            "predicted": 3.093,
+            "residual": -0.322
+          },
+          {
+            "index": 41,
+            "actual": 4.196,
+            "predicted": 4.721,
+            "residual": -0.525
+          },
+          {
+            "index": 88,
+            "actual": 2.967,
+            "predicted": 2.98,
+            "residual": -0.013
+          },
+          {
+            "index": 68,
+            "actual": 3.636,
+            "predicted": 3.86,
+            "residual": -0.224
+          },
+          {
+            "index": 133,
+            "actual": 4.26,
+            "predicted": 4.615,
+            "residual": -0.355
+          },
+          {
+            "index": 117,
+            "actual": 4.892,
+            "predicted": 4.899,
+            "residual": -0.007
+          },
+          {
+            "index": 91,
+            "actual": 5.608,
+            "predicted": 5.737,
+            "residual": -0.129
+          },
+          {
+            "index": 129,
+            "actual": 6.389,
+            "predicted": 6.141,
+            "residual": 0.248
+          },
+          {
+            "index": 8,
+            "actual": 6.134,
+            "predicted": 6.042,
+            "residual": 0.092
+          },
+          {
+            "index": 107,
+            "actual": 1.777,
+            "predicted": 2.11,
+            "residual": -0.333
+          },
+          {
+            "index": 97,
+            "actual": 2.997,
+            "predicted": 3.129,
+            "residual": -0.132
+          },
+          {
+            "index": 7,
+            "actual": 5.058,
+            "predicted": 5.018,
+            "residual": 0.04
+          },
+          {
+            "index": 32,
+            "actual": 4.411,
+            "predicted": 3.77,
+            "residual": 0.641
+          },
+          {
+            "index": 136,
+            "actual": 2.468,
+            "predicted": 2.445,
+            "residual": 0.023
+          },
+          {
+            "index": 98,
+            "actual": 3.178,
+            "predicted": 2.781,
+            "residual": 0.397
+          },
+          {
+            "index": 47,
+            "actual": 2.33,
+            "predicted": 1.858,
+            "residual": 0.472
+          },
+          {
+            "index": 126,
+            "actual": 3.118,
+            "predicted": 3.167,
+            "residual": -0.049
+          },
+          {
+            "index": 128,
+            "actual": 5.416,
+            "predicted": 5.715,
+            "residual": -0.299
+          },
+          {
+            "index": 138,
+            "actual": 5.215,
+            "predicted": 5.392,
+            "residual": -0.177
+          },
+          {
+            "index": 26,
+            "actual": 2.194,
+            "predicted": 2.749,
+            "residual": -0.555
+          },
+          {
+            "index": 61,
+            "actual": 5.519,
+            "predicted": 5.302,
+            "residual": 0.217
+          },
+          {
+            "index": 111,
+            "actual": 5.25,
+            "predicted": 5.359,
+            "residual": -0.109
+          },
+          {
+            "index": 109,
+            "actual": 4.985,
+            "predicted": 4.96,
+            "residual": 0.025
+          },
+          {
+            "index": 104,
+            "actual": 2.444,
+            "predicted": 2.055,
+            "residual": 0.389
+          },
+          {
+            "index": 63,
+            "actual": 5.097,
+            "predicted": 5.369,
+            "residual": -0.272
+          },
+          {
+            "index": 28,
+            "actual": 5.404,
+            "predicted": 5.506,
+            "residual": -0.102
+          },
+          {
+            "index": 89,
+            "actual": 3.732,
+            "predicted": 3.923,
+            "residual": -0.191
+          },
+          {
+            "index": 64,
+            "actual": 4.54,
+            "predicted": 4.645,
+            "residual": -0.105
+          },
+          {
+            "index": 76,
+            "actual": 4.027,
+            "predicted": 4.3,
+            "residual": -0.273
+          },
+          {
+            "index": 121,
+            "actual": 3.194,
+            "predicted": 2.749,
+            "residual": 0.445
+          },
+          {
+            "index": 112,
+            "actual": 2.872,
+            "predicted": 2.677,
+            "residual": 0.195
+          }
+        ],
+        "summary_metric": 0.928
+      },
+      "features": [
+        "median_income",
+        "house_age",
+        "average_rooms",
+        "average_bedrooms",
+        "population",
+        "average_occupancy"
+      ],
+      "model_path": "ml_engine/models/house_price_forecaster_1.0.0_1794201714.joblib",
+      "pipeline_path": "ml_engine/models/house_price_forecaster_1.0.0_1794201714_pipeline.joblib",
+      "created_at": "2026-11-09T05:21:54Z",
+      "total_inferences": 0
+    },
+    {
+      "model_id": "loan_default_risk_analyzer_1.0.0_1794201714",
+      "model_name": "Loan Default Risk Analyzer",
+      "version": "1.0.0",
+      "task_type": "classification",
+      "algorithm": "gradient_boosting",
+      "stage": "production",
+      "metrics": {
+        "accuracy": 0.725,
+        "precision": 0.7247,
+        "recall": 0.725,
+        "f1_score": 0.7238,
+        "roc_auc": 0.8081,
+        "confusion_matrix": [
+          {
+            "actual": "0",
+            "predicted": "0",
+            "count": 67
+          },
+          {
+            "actual": "0",
+            "predicted": "1",
+            "count": 19
+          },
+          {
+            "actual": "1",
+            "predicted": "0",
+            "count": 25
+          },
+          {
+            "actual": "1",
+            "predicted": "1",
+            "count": 49
+          }
+        ],
+        "confusion_matrix_raw": [
+          [
+            67,
+            19
+          ],
+          [
+            25,
+            49
+          ]
+        ],
+        "classification_report": {
+          "0": {
+            "precision": 0.7282608695652174,
+            "recall": 0.7790697674418605,
+            "f1-score": 0.7528089887640449,
+            "support": 86.0
+          },
+          "1": {
+            "precision": 0.7205882352941176,
+            "recall": 0.6621621621621622,
+            "f1-score": 0.6901408450704225,
+            "support": 74.0
+          },
+          "accuracy": 0.725,
+          "macro avg": {
+            "precision": 0.7244245524296675,
+            "recall": 0.7206159648020114,
+            "f1-score": 0.7214749169172336,
+            "support": 160.0
+          },
+          "weighted avg": {
+            "precision": 0.7247122762148337,
+            "recall": 0.725,
+            "f1-score": 0.7238249723057446,
+            "support": 160.0
+          }
+        },
+        "summary_metric": 0.7238
+      },
+      "features": [
+        "credit_score",
+        "annual_income",
+        "loan_amount",
+        "employment_years",
+        "debt_to_income",
+        "home_ownership"
+      ],
+      "model_path": "ml_engine/models/loan_default_risk_analyzer_1.0.0_1794201714.joblib",
+      "pipeline_path": "ml_engine/models/loan_default_risk_analyzer_1.0.0_1794201714_pipeline.joblib",
+      "created_at": "2026-11-09T05:21:54Z",
+      "total_inferences": 0
+    },
+    {
+      "model_id": "cardiac_health_risk_evaluator_1.0.0_1794201714",
+      "model_name": "Cardiac Health Risk Evaluator",
+      "version": "1.0.0",
+      "task_type": "classification",
+      "algorithm": "random_forest",
+      "stage": "production",
+      "metrics": {
+        "accuracy": 0.8,
+        "precision": 0.7627,
+        "recall": 0.8,
+        "f1_score": 0.7556,
+        "roc_auc": 0.7496,
+        "confusion_matrix": [
+          {
+            "actual": "0",
+            "predicted": "0",
+            "count": 5
+          },
+          {
+            "actual": "0",
+            "predicted": "1",
+            "count": 24
+          },
+          {
+            "actual": "1",
+            "predicted": "0",
+            "count": 4
+          },
+          {
+            "actual": "1",
+            "predicted": "1",
+            "count": 107
+          }
+        ],
+        "confusion_matrix_raw": [
+          [
+            5,
+            24
+          ],
+          [
+            4,
+            107
+          ]
+        ],
+        "classification_report": {
+          "0": {
+            "precision": 0.5555555555555556,
+            "recall": 0.1724137931034483,
+            "f1-score": 0.2631578947368421,
+            "support": 29.0
+          },
+          "1": {
+            "precision": 0.816793893129771,
+            "recall": 0.963963963963964,
+            "f1-score": 0.8842975206611571,
+            "support": 111.0
+          },
+          "accuracy": 0.8,
+          "macro avg": {
+            "precision": 0.6861747243426632,
+            "recall": 0.5681888785337061,
+            "f1-score": 0.5737277076989996,
+            "support": 140.0
+          },
+          "weighted avg": {
+            "precision": 0.7626802374893978,
+            "recall": 0.8,
+            "f1-score": 0.755632883862549,
+            "support": 140.0
+          }
+        },
+        "summary_metric": 0.7556
+      },
+      "features": [
+        "age",
+        "sex",
+        "resting_bp",
+        "cholesterol",
+        "max_heart_rate",
+        "chest_pain_type",
+        "st_depression"
+      ],
+      "model_path": "ml_engine/models/cardiac_health_risk_evaluator_1.0.0_1794201714.joblib",
+      "pipeline_path": "ml_engine/models/cardiac_health_risk_evaluator_1.0.0_1794201714_pipeline.joblib",
+      "created_at": "2026-11-09T05:21:55Z",
+      "total_inferences": 0
+    },
+    {
+      "model_id": "fraud_detection_engine_1.0.0_1794201715",
+      "model_name": "Fraud Detection Engine",
+      "version": "1.0.0",
+      "task_type": "classification",
+      "algorithm": "xgboost",
+      "stage": "production",
+      "metrics": {
+        "accuracy": 0.8889,
+        "precision": 0.8778,
+        "recall": 0.8889,
+        "f1_score": 0.8826,
+        "roc_auc": 0.8398,
+        "confusion_matrix": [
+          {
+            "actual": "0",
+            "predicted": "0",
+            "count": 154
+          },
+          {
+            "actual": "0",
+            "predicted": "1",
+            "count": 8
+          },
+          {
+            "actual": "1",
+            "predicted": "0",
+            "count": 12
+          },
+          {
+            "actual": "1",
+            "predicted": "1",
+            "count": 6
+          }
+        ],
+        "confusion_matrix_raw": [
+          [
+            154,
+            8
+          ],
+          [
+            12,
+            6
+          ]
+        ],
+        "classification_report": {
+          "0": {
+            "precision": 0.927710843373494,
+            "recall": 0.9506172839506173,
+            "f1-score": 0.9390243902439024,
+            "support": 162.0
+          },
+          "1": {
+            "precision": 0.42857142857142855,
+            "recall": 0.3333333333333333,
+            "f1-score": 0.375,
+            "support": 18.0
+          },
+          "accuracy": 0.8888888888888888,
+          "macro avg": {
+            "precision": 0.6781411359724613,
+            "recall": 0.6419753086419753,
+            "f1-score": 0.6570121951219512,
+            "support": 180.0
+          },
+          "weighted avg": {
+            "precision": 0.8777969018932874,
+            "recall": 0.8888888888888888,
+            "f1-score": 0.8826219512195123,
+            "support": 180.0
+          }
+        },
+        "summary_metric": 0.8826
+      },
+      "features": [
+        "transaction_amount",
+        "distance_from_home_km",
+        "foreign_transaction",
+        "device_risk_score",
+        "velocity_last_24h"
+      ],
+      "model_path": "ml_engine/models/fraud_detection_engine_1.0.0_1794201715.joblib",
+      "pipeline_path": "ml_engine/models/fraud_detection_engine_1.0.0_1794201715_pipeline.joblib",
+      "created_at": "2026-11-09T05:21:55Z",
+      "total_inferences": 0
+    },
+    {
+      "model_id": "rental_demand_forecaster_1.0.0_1794201715",
+      "model_name": "Rental Demand Forecaster",
+      "version": "1.0.0",
+      "task_type": "regression",
+      "algorithm": "xgboost_regressor",
+      "stage": "production",
+      "metrics": {
+        "mae": 26.8537,
+        "mse": 1155.5379,
+        "rmse": 33.9932,
+        "r2": 0.8241,
+        "adjusted_r2": 0.8142,
+        "residual_mean": 4.8854,
+        "residual_std": 33.6403,
+        "actual_vs_predicted_samples": [
+          {
+            "index": 47,
+            "actual": 122.0,
+            "predicted": 67.15,
+            "residual": 54.85
+          },
+          {
+            "index": 28,
+            "actual": 87.0,
+            "predicted": 96.126,
+            "residual": -9.126
+          },
+          {
+            "index": 19,
+            "actual": 135.0,
+            "predicted": 133.067,
+            "residual": 1.933
+          },
+          {
+            "index": 39,
+            "actual": 216.0,
+            "predicted": 257.212,
+            "residual": -41.212
+          },
+          {
+            "index": 133,
+            "actual": 8.0,
+            "predicted": 36.271,
+            "residual": -28.271
+          },
+          {
+            "index": 90,
+            "actual": 106.0,
+            "predicted": 131.057,
+            "residual": -25.057
+          },
+          {
+            "index": 109,
+            "actual": 5.0,
+            "predicted": 14.224,
+            "residual": -9.224
+          },
+          {
+            "index": 71,
+            "actual": 169.0,
+            "predicted": 152.569,
+            "residual": 16.431
+          },
+          {
+            "index": 92,
+            "actual": 164.0,
+            "predicted": 168.164,
+            "residual": -4.164
+          },
+          {
+            "index": 56,
+            "actual": 167.0,
+            "predicted": 147.275,
+            "residual": 19.725
+          },
+          {
+            "index": 116,
+            "actual": 172.0,
+            "predicted": 163.298,
+            "residual": 8.702
+          },
+          {
+            "index": 129,
+            "actual": 94.0,
+            "predicted": 68.188,
+            "residual": 25.812
+          },
+          {
+            "index": 8,
+            "actual": 65.0,
+            "predicted": 32.018,
+            "residual": 32.982
+          },
+          {
+            "index": 29,
+            "actual": 5.0,
+            "predicted": -12.917,
+            "residual": 17.917
+          },
+          {
+            "index": 26,
+            "actual": 91.0,
+            "predicted": 140.916,
+            "residual": -49.916
+          },
+          {
+            "index": 69,
+            "actual": 43.0,
+            "predicted": 105.094,
+            "residual": -62.094
+          },
+          {
+            "index": 163,
+            "actual": 74.0,
+            "predicted": 61.257,
+            "residual": 12.743
+          },
+          {
+            "index": 6,
+            "actual": 173.0,
+            "predicted": 172.438,
+            "residual": 0.562
+          },
+          {
+            "index": 157,
+            "actual": 54.0,
+            "predicted": 59.18,
+            "residual": -5.18
+          },
+          {
+            "index": 79,
+            "actual": 199.0,
+            "predicted": 210.324,
+            "residual": -11.324
+          },
+          {
+            "index": 23,
+            "actual": 116.0,
+            "predicted": 164.575,
+            "residual": -48.575
+          },
+          {
+            "index": 138,
+            "actual": 45.0,
+            "predicted": 24.192,
+            "residual": 20.808
+          },
+          {
+            "index": 59,
+            "actual": 12.0,
+            "predicted": 12.192,
+            "residual": -0.192
+          },
+          {
+            "index": 9,
+            "actual": 5.0,
+            "predicted": 55.625,
+            "residual": -50.625
+          },
+          {
+            "index": 13,
+            "actual": 53.0,
+            "predicted": 18.387,
+            "residual": 34.613
+          },
+          {
+            "index": 107,
+            "actual": 138.0,
+            "predicted": 147.733,
+            "residual": -9.733
+          },
+          {
+            "index": 14,
+            "actual": 16.0,
+            "predicted": 13.995,
+            "residual": 2.005
+          },
+          {
+            "index": 150,
+            "actual": 5.0,
+            "predicted": 32.326,
+            "residual": -27.326
+          },
+          {
+            "index": 124,
+            "actual": 70.0,
+            "predicted": 69.753,
+            "residual": 0.247
+          },
+          {
+            "index": 114,
+            "actual": 5.0,
+            "predicted": 21.661,
+            "residual": -16.661
+          },
+          {
+            "index": 121,
+            "actual": 141.0,
+            "predicted": 98.897,
+            "residual": 42.103
+          },
+          {
+            "index": 126,
+            "actual": 8.0,
+            "predicted": 63.163,
+            "residual": -55.163
+          },
+          {
+            "index": 2,
+            "actual": 136.0,
+            "predicted": 171.987,
+            "residual": -35.987
+          },
+          {
+            "index": 135,
+            "actual": 321.0,
+            "predicted": 256.232,
+            "residual": 64.768
+          },
+          {
+            "index": 35,
+            "actual": 90.0,
+            "predicted": 49.826,
+            "residual": 40.174
+          },
+          {
+            "index": 32,
+            "actual": 5.0,
+            "predicted": 8.698,
+            "residual": -3.698
+          },
+          {
+            "index": 57,
+            "actual": 67.0,
+            "predicted": 82.614,
+            "residual": -15.614
+          },
+          {
+            "index": 97,
+            "actual": 185.0,
+            "predicted": 159.061,
+            "residual": 25.939
+          },
+          {
+            "index": 145,
+            "actual": 33.0,
+            "predicted": 73.524,
+            "residual": -40.524
+          },
+          {
+            "index": 101,
+            "actual": 211.0,
+            "predicted": 230.386,
+            "residual": -19.386
+          },
+          {
+            "index": 81,
+            "actual": 164.0,
+            "predicted": 89.059,
+            "residual": 74.941
+          },
+          {
+            "index": 95,
+            "actual": 71.0,
+            "predicted": 104.81,
+            "residual": -33.81
+          },
+          {
+            "index": 25,
+            "actual": 190.0,
+            "predicted": 160.648,
+            "residual": 29.352
+          },
+          {
+            "index": 58,
+            "actual": 121.0,
+            "predicted": 213.538,
+            "residual": -92.538
+          },
+          {
+            "index": 104,
+            "actual": 14.0,
+            "predicted": 12.292,
+            "residual": 1.708
+          },
+          {
+            "index": 111,
+            "actual": 5.0,
+            "predicted": 2.913,
+            "residual": 2.087
+          },
+          {
+            "index": 38,
+            "actual": 46.0,
+            "predicted": 10.762,
+            "residual": 35.238
+          },
+          {
+            "index": 154,
+            "actual": 202.0,
+            "predicted": 134.994,
+            "residual": 67.006
+          },
+          {
+            "index": 93,
+            "actual": 158.0,
+            "predicted": 171.002,
+            "residual": -13.002
+          },
+          {
+            "index": 22,
+            "actual": 23.0,
+            "predicted": 40.958,
+            "residual": -17.958
+          }
+        ],
+        "summary_metric": 0.8241
+      },
+      "features": [
+        "hour",
+        "temperature_c",
+        "humidity",
+        "wind_speed",
+        "season",
+        "is_weekend"
+      ],
+      "model_path": "ml_engine/models/rental_demand_forecaster_1.0.0_1794201715.joblib",
+      "pipeline_path": "ml_engine/models/rental_demand_forecaster_1.0.0_1794201715_pipeline.joblib",
+      "created_at": "2026-11-09T05:21:55Z",
+      "total_inferences": 0
+    },
+    {
+      "model_id": "sales_weekly_forecaster_1.0.0_1794201716",
+      "model_name": "Sales Weekly Forecaster",
+      "version": "1.0.0",
+      "task_type": "regression",
+      "algorithm": "random_forest_regressor",
+      "stage": "production",
+      "metrics": {
+        "mae": 2292.8606,
+        "mse": 8347712.0763,
+        "rmse": 2889.2407,
+        "r2": 0.8067,
+        "adjusted_r2": 0.7964,
+        "residual_mean": -359.8068,
+        "residual_std": 2866.7492,
+        "actual_vs_predicted_samples": [
+          {
+            "index": 155,
+            "actual": 17113.0,
+            "predicted": 19884.863,
+            "residual": -2771.863
+          },
+          {
+            "index": 53,
+            "actual": 25193.32,
+            "predicted": 28099.685,
+            "residual": -2906.365
+          },
+          {
+            "index": 92,
+            "actual": 38429.19,
+            "predicted": 34018.918,
+            "residual": 4410.272
+          },
+          {
+            "index": 29,
+            "actual": 19256.6,
+            "predicted": 20709.672,
+            "residual": -1453.072
+          },
+          {
+            "index": 77,
+            "actual": 37321.12,
+            "predicted": 38164.437,
+            "residual": -843.317
+          },
+          {
+            "index": 42,
+            "actual": 36517.01,
+            "predicted": 38118.36,
+            "residual": -1601.35
+          },
+          {
+            "index": 12,
+            "actual": 37751.41,
+            "predicted": 39926.577,
+            "residual": -2175.167
+          },
+          {
+            "index": 71,
+            "actual": 34481.75,
+            "predicted": 37160.032,
+            "residual": -2678.282
+          },
+          {
+            "index": 30,
+            "actual": 25327.07,
+            "predicted": 28976.31,
+            "residual": -3649.24
+          },
+          {
+            "index": 97,
+            "actual": 34304.79,
+            "predicted": 33978.812,
+            "residual": 325.978
+          },
+          {
+            "index": 63,
+            "actual": 33395.89,
+            "predicted": 31946.425,
+            "residual": 1449.465
+          },
+          {
+            "index": 27,
+            "actual": 45156.6,
+            "predicted": 35562.102,
+            "residual": 9594.498
+          },
+          {
+            "index": 70,
+            "actual": 24524.81,
+            "predicted": 27914.955,
+            "residual": -3390.145
+          },
+          {
+            "index": 141,
+            "actual": 38528.18,
+            "predicted": 36751.065,
+            "residual": 1777.115
+          },
+          {
+            "index": 93,
+            "actual": 34298.87,
+            "predicted": 38485.029,
+            "residual": -4186.159
+          },
+          {
+            "index": 111,
+            "actual": 36348.73,
+            "predicted": 36350.172,
+            "residual": -1.442
+          },
+          {
+            "index": 124,
+            "actual": 29550.75,
+            "predicted": 29736.146,
+            "residual": -185.396
+          },
+          {
+            "index": 82,
+            "actual": 24438.69,
+            "predicted": 29613.814,
+            "residual": -5175.124
+          },
+          {
+            "index": 8,
+            "actual": 35290.52,
+            "predicted": 37053.775,
+            "residual": -1763.255
+          },
+          {
+            "index": 114,
+            "actual": 30474.42,
+            "predicted": 28857.327,
+            "residual": 1617.093
+          },
+          {
+            "index": 102,
+            "actual": 39515.95,
+            "predicted": 40099.855,
+            "residual": -583.905
+          },
+          {
+            "index": 139,
+            "actual": 27563.81,
+            "predicted": 28840.881,
+            "residual": -1277.071
+          },
+          {
+            "index": 84,
+            "actual": 37647.7,
+            "predicted": 33680.048,
+            "residual": 3967.652
+          },
+          {
+            "index": 137,
+            "actual": 25637.28,
+            "predicted": 24111.809,
+            "residual": 1525.471
+          },
+          {
+            "index": 10,
+            "actual": 39669.85,
+            "predicted": 39255.335,
+            "residual": 414.515
+          },
+          {
+            "index": 128,
+            "actual": 25940.25,
+            "predicted": 24469.049,
+            "residual": 1471.201
+          },
+          {
+            "index": 75,
+            "actual": 44045.72,
+            "predicted": 41980.021,
+            "residual": 2065.699
+          },
+          {
+            "index": 113,
+            "actual": 36698.55,
+            "predicted": 34838.267,
+            "residual": 1860.283
+          },
+          {
+            "index": 15,
+            "actual": 22960.75,
+            "predicted": 24300.849,
+            "residual": -1340.099
+          },
+          {
+            "index": 78,
+            "actual": 27189.63,
+            "predicted": 26796.963,
+            "residual": 392.667
+          },
+          {
+            "index": 65,
+            "actual": 39804.47,
+            "predicted": 31182.262,
+            "residual": 8622.208
+          },
+          {
+            "index": 32,
+            "actual": 19616.62,
+            "predicted": 19843.822,
+            "residual": -227.202
+          },
+          {
+            "index": 133,
+            "actual": 33740.7,
+            "predicted": 36120.884,
+            "residual": -2380.184
+          },
+          {
+            "index": 151,
+            "actual": 32559.89,
+            "predicted": 34621.995,
+            "residual": -2062.105
+          },
+          {
+            "index": 62,
+            "actual": 24669.14,
+            "predicted": 22680.287,
+            "residual": 1988.853
+          },
+          {
+            "index": 69,
+            "actual": 36997.14,
+            "predicted": 38740.638,
+            "residual": -1743.498
+          },
+          {
+            "index": 11,
+            "actual": 25992.9,
+            "predicted": 27610.559,
+            "residual": -1617.659
+          },
+          {
+            "index": 109,
+            "actual": 30128.74,
+            "predicted": 29405.721,
+            "residual": 723.019
+          },
+          {
+            "index": 4,
+            "actual": 27682.43,
+            "predicted": 29868.174,
+            "residual": -2185.744
+          },
+          {
+            "index": 67,
+            "actual": 25683.27,
+            "predicted": 27236.653,
+            "residual": -1553.383
+          },
+          {
+            "index": 158,
+            "actual": 21300.67,
+            "predicted": 22458.074,
+            "residual": -1157.404
+          },
+          {
+            "index": 89,
+            "actual": 28218.96,
+            "predicted": 27742.499,
+            "residual": 476.461
+          },
+          {
+            "index": 19,
+            "actual": 40164.81,
+            "predicted": 36976.252,
+            "residual": 3188.558
+          },
+          {
+            "index": 55,
+            "actual": 23892.25,
+            "predicted": 24780.605,
+            "residual": -888.355
+          },
+          {
+            "index": 130,
+            "actual": 17813.46,
+            "predicted": 20612.853,
+            "residual": -2799.393
+          },
+          {
+            "index": 83,
+            "actual": 20501.47,
+            "predicted": 17076.461,
+            "residual": 3425.009
+          },
+          {
+            "index": 131,
+            "actual": 33244.79,
+            "predicted": 35776.257,
+            "residual": -2531.467
+          },
+          {
+            "index": 74,
+            "actual": 31189.97,
+            "predicted": 33638.223,
+            "residual": -2448.253
+          },
+          {
+            "index": 46,
+            "actual": 32620.64,
+            "predicted": 27435.058,
+            "residual": 5185.582
+          },
+          {
+            "index": 152,
+            "actual": 36240.73,
+            "predicted": 29950.457,
+            "residual": 6290.273
+          }
+        ],
+        "summary_metric": 0.8067
+      },
+      "features": [
+        "store_id",
+        "dept_id",
+        "temperature",
+        "fuel_price",
+        "cpi",
+        "unemployment",
+        "is_holiday",
+        "promo_markdown"
+      ],
+      "model_path": "ml_engine/models/sales_weekly_forecaster_1.0.0_1794201716.joblib",
+      "pipeline_path": "ml_engine/models/sales_weekly_forecaster_1.0.0_1794201716_pipeline.joblib",
+      "created_at": "2026-11-09T05:21:56Z",
+      "total_inferences": 0
+    },
+    {
+      "model_id": "student_grade_predictor_1.0.0_1794201716",
+      "model_name": "Student Grade Predictor",
+      "version": "1.0.0",
+      "task_type": "regression",
+      "algorithm": "linear_regression",
+      "stage": "production",
+      "metrics": {
+        "mae": 1.1013,
+        "mse": 2.0691,
+        "rmse": 1.4384,
+        "r2": 0.8606,
+        "adjusted_r2": 0.8476,
+        "residual_mean": 0.0723,
+        "residual_std": 1.4366,
+        "actual_vs_predicted_samples": [
+          {
+            "index": 101,
+            "actual": 16.0,
+            "predicted": 14.553,
+            "residual": 1.447
+          },
+          {
+            "index": 127,
+            "actual": 3.0,
+            "predicted": 5.069,
+            "residual": -2.069
+          },
+          {
+            "index": 84,
+            "actual": 7.0,
+            "predicted": 7.411,
+            "residual": -0.411
+          },
+          {
+            "index": 125,
+            "actual": 3.0,
+            "predicted": 5.928,
+            "residual": -2.928
+          },
+          {
+            "index": 1,
+            "actual": 11.0,
+            "predicted": 12.13,
+            "residual": -1.13
+          },
+          {
+            "index": 32,
+            "actual": 14.0,
+            "predicted": 11.792,
+            "residual": 2.208
+          },
+          {
+            "index": 118,
+            "actual": 6.0,
+            "predicted": 5.92,
+            "residual": 0.08
+          },
+          {
+            "index": 30,
+            "actual": 5.0,
+            "predicted": 6.29,
+            "residual": -1.29
+          },
+          {
+            "index": 75,
+            "actual": 6.0,
+            "predicted": 6.243,
+            "residual": -0.243
+          },
+          {
+            "index": 124,
+            "actual": 9.0,
+            "predicted": 10.123,
+            "residual": -1.123
+          },
+          {
+            "index": 53,
+            "actual": 10.0,
+            "predicted": 9.233,
+            "residual": 0.767
+          },
+          {
+            "index": 13,
+            "actual": 6.0,
+            "predicted": 5.557,
+            "residual": 0.443
+          },
+          {
+            "index": 60,
+            "actual": 6.0,
+            "predicted": 7.745,
+            "residual": -1.745
+          },
+          {
+            "index": 129,
+            "actual": 3.0,
+            "predicted": 2.151,
+            "residual": 0.849
+          },
+          {
+            "index": 117,
+            "actual": 13.0,
+            "predicted": 12.798,
+            "residual": 0.202
+          },
+          {
+            "index": 119,
+            "actual": 15.0,
+            "predicted": 14.347,
+            "residual": 0.653
+          },
+          {
+            "index": 3,
+            "actual": 13.0,
+            "predicted": 12.4,
+            "residual": 0.6
+          },
+          {
+            "index": 6,
+            "actual": 10.0,
+            "predicted": 9.759,
+            "residual": 0.241
+          },
+          {
+            "index": 74,
+            "actual": 9.0,
+            "predicted": 9.383,
+            "residual": -0.383
+          },
+          {
+            "index": 109,
+            "actual": 8.0,
+            "predicted": 8.742,
+            "residual": -0.742
+          },
+          {
+            "index": 22,
+            "actual": 5.0,
+            "predicted": 5.9,
+            "residual": -0.9
+          },
+          {
+            "index": 122,
+            "actual": 13.0,
+            "predicted": 11.635,
+            "residual": 1.365
+          },
+          {
+            "index": 54,
+            "actual": 11.0,
+            "predicted": 10.151,
+            "residual": 0.849
+          },
+          {
+            "index": 102,
+            "actual": 12.0,
+            "predicted": 13.235,
+            "residual": -1.235
+          },
+          {
+            "index": 70,
+            "actual": 5.0,
+            "predicted": 6.538,
+            "residual": -1.538
+          },
+          {
+            "index": 63,
+            "actual": 9.0,
+            "predicted": 7.696,
+            "residual": 1.304
+          },
+          {
+            "index": 15,
+            "actual": 5.0,
+            "predicted": 4.249,
+            "residual": 0.751
+          },
+          {
+            "index": 5,
+            "actual": 12.0,
+            "predicted": 12.892,
+            "residual": -0.892
+          },
+          {
+            "index": 51,
+            "actual": 7.0,
+            "predicted": 5.903,
+            "residual": 1.097
+          },
+          {
+            "index": 79,
+            "actual": 4.0,
+            "predicted": 5.841,
+            "residual": -1.841
+          },
+          {
+            "index": 29,
+            "actual": 2.0,
+            "predicted": 0.959,
+            "residual": 1.041
+          },
+          {
+            "index": 115,
+            "actual": 10.0,
+            "predicted": 8.209,
+            "residual": 1.791
+          },
+          {
+            "index": 16,
+            "actual": 1.0,
+            "predicted": 2.302,
+            "residual": -1.302
+          },
+          {
+            "index": 20,
+            "actual": 2.0,
+            "predicted": 2.293,
+            "residual": -0.293
+          },
+          {
+            "index": 113,
+            "actual": 13.0,
+            "predicted": 13.399,
+            "residual": -0.399
+          },
+          {
+            "index": 69,
+            "actual": 5.0,
+            "predicted": 3.73,
+            "residual": 1.27
+          },
+          {
+            "index": 44,
+            "actual": 13.0,
+            "predicted": 13.667,
+            "residual": -0.667
+          },
+          {
+            "index": 35,
+            "actual": 6.0,
+            "predicted": 7.888,
+            "residual": -1.888
+          },
+          {
+            "index": 17,
+            "actual": 3.0,
+            "predicted": 1.873,
+            "residual": 1.127
+          },
+          {
+            "index": 108,
+            "actual": 4.0,
+            "predicted": 4.065,
+            "residual": -0.065
+          },
+          {
+            "index": 126,
+            "actual": 1.0,
+            "predicted": 0.926,
+            "residual": 0.074
+          },
+          {
+            "index": 47,
+            "actual": 10.0,
+            "predicted": 8.371,
+            "residual": 1.629
+          },
+          {
+            "index": 4,
+            "actual": 10.0,
+            "predicted": 10.903,
+            "residual": -0.903
+          },
+          {
+            "index": 97,
+            "actual": 2.0,
+            "predicted": 1.833,
+            "residual": 0.167
+          },
+          {
+            "index": 89,
+            "actual": 9.0,
+            "predicted": 7.308,
+            "residual": 1.692
+          },
+          {
+            "index": 77,
+            "actual": 6.0,
+            "predicted": 6.872,
+            "residual": -0.872
+          },
+          {
+            "index": 24,
+            "actual": 6.0,
+            "predicted": 7.688,
+            "residual": -1.688
+          },
+          {
+            "index": 128,
+            "actual": 6.0,
+            "predicted": 4.714,
+            "residual": 1.286
+          },
+          {
+            "index": 42,
+            "actual": 15.0,
+            "predicted": 13.796,
+            "residual": 1.204
+          },
+          {
+            "index": 94,
+            "actual": 8.0,
+            "predicted": 6.178,
+            "residual": 1.822
+          }
+        ],
+        "summary_metric": 0.8606
+      },
+      "features": [
+        "study_time_hours",
+        "absences",
+        "prior_grade_1",
+        "prior_grade_2",
+        "parent_education",
+        "internet_access",
+        "extra_tutoring"
+      ],
+      "model_path": "ml_engine/models/student_grade_predictor_1.0.0_1794201716.joblib",
+      "pipeline_path": "ml_engine/models/student_grade_predictor_1.0.0_1794201716_pipeline.joblib",
+      "created_at": "2026-11-09T05:21:56Z",
+      "total_inferences": 0
+    },
+    {
+      "model_id": "customer_segment_clusterer_1.0.0_1794201716",
+      "model_name": "Customer Segment Clusterer",
+      "version": "1.0.0",
+      "task_type": "clustering",
+      "algorithm": "kmeans",
+      "stage": "production",
+      "metrics": {
+        "clusters_count": 3,
+        "silhouette_score": 0.1583,
+        "davies_bouldin_index": 1.8284,
+        "calinski_harabasz_index": 92.8296,
+        "summary_metric": 0.1583
+      },
+      "features": [
+        "gender",
+        "age",
+        "annual_income_k",
+        "spending_score",
+        "visit_frequency"
+      ],
+      "model_path": "ml_engine/models/customer_segment_clusterer_1.0.0_1794201716.joblib",
+      "pipeline_path": "ml_engine/models/customer_segment_clusterer_1.0.0_1794201716_pipeline.joblib",
+      "created_at": "2026-11-09T05:21:56Z",
+      "total_inferences": 0
+    },
+    {
+      "model_id": "loan_default_risk_model_1.0.0_1794202562",
+      "model_name": "Loan Default Risk Model",
+      "version": "1.0.0",
+      "task_type": "classification",
+      "algorithm": "random_forest",
+      "stage": "staging",
+      "metrics": {
+        "accuracy": 0.775,
+        "precision": 0.7761,
+        "recall": 0.775,
+        "f1_score": 0.7736,
+        "roc_auc": 0.8488,
+        "confusion_matrix": [
+          {
+            "actual": "0",
+            "predicted": "0",
+            "count": 72
+          },
+          {
+            "actual": "0",
+            "predicted": "1",
+            "count": 14
+          },
+          {
+            "actual": "1",
+            "predicted": "0",
+            "count": 22
+          },
+          {
+            "actual": "1",
+            "predicted": "1",
+            "count": 52
+          }
+        ],
+        "confusion_matrix_raw": [
+          [
+            72,
+            14
+          ],
+          [
+            22,
+            52
+          ]
+        ],
+        "classification_report": {
+          "0": {
+            "precision": 0.7659574468085106,
+            "recall": 0.8372093023255814,
+            "f1-score": 0.8,
+            "support": 86.0
+          },
+          "1": {
+            "precision": 0.7878787878787878,
+            "recall": 0.7027027027027027,
+            "f1-score": 0.7428571428571429,
+            "support": 74.0
+          },
+          "accuracy": 0.775,
+          "macro avg": {
+            "precision": 0.7769181173436492,
+            "recall": 0.7699560025141421,
+            "f1-score": 0.7714285714285715,
+            "support": 160.0
+          },
+          "weighted avg": {
+            "precision": 0.7760960670535139,
+            "recall": 0.775,
+            "f1-score": 0.7735714285714286,
+            "support": 160.0
+          }
+        },
+        "summary_metric": 0.7736
+      },
+      "features": [
+        "credit_score",
+        "annual_income",
+        "loan_amount",
+        "employment_years",
+        "debt_to_income",
+        "home_ownership"
+      ],
+      "model_path": "ml_engine/models/loan_default_risk_model_1.0.0_1794202562.joblib",
+      "pipeline_path": "ml_engine/models/loan_default_risk_model_1.0.0_1794202562_pipeline.joblib",
+      "created_at": "2026-11-09T05:36:02Z",
+      "total_inferences": 0
+    },
+    {
+      "model_id": "student_performance_model_1.0.0_1794202602",
+      "model_name": "Student Performance Model",
+      "version": "1.0.0",
+      "task_type": "regression",
+      "algorithm": "ridge",
+      "stage": "staging",
+      "metrics": {
+        "mae": 1.1007,
+        "mse": 2.0685,
+        "rmse": 1.4382,
+        "r2": 0.8607,
+        "adjusted_r2": 0.8477,
+        "residual_mean": 0.0715,
+        "residual_std": 1.4364,
+        "actual_vs_predicted_samples": [
+          {
+            "index": 46,
+            "actual": 14.0,
+            "predicted": 12.763,
+            "residual": 1.237
+          },
+          {
+            "index": 29,
+            "actual": 2.0,
+            "predicted": 0.968,
+            "residual": 1.032
+          },
+          {
+            "index": 18,
+            "actual": 13.0,
+            "predicted": 8.318,
+            "residual": 4.682
+          },
+          {
+            "index": 36,
+            "actual": 12.0,
+            "predicted": 10.097,
+            "residual": 1.903
+          },
+          {
+            "index": 90,
+            "actual": 13.0,
+            "predicted": 13.961,
+            "residual": -0.961
+          },
+          {
+            "index": 111,
+            "actual": 8.0,
+            "predicted": 6.462,
+            "residual": 1.538
+          },
+          {
+            "index": 67,
+            "actual": 3.0,
+            "predicted": 5.426,
+            "residual": -2.426
+          },
+          {
+            "index": 70,
+            "actual": 5.0,
+            "predicted": 6.546,
+            "residual": -1.546
+          },
+          {
+            "index": 11,
+            "actual": 9.0,
+            "predicted": 9.89,
+            "residual": -0.89
+          },
+          {
+            "index": 65,
+            "actual": 5.0,
+            "predicted": 4.43,
+            "residual": 0.57
+          },
+          {
+            "index": 31,
+            "actual": 8.0,
+            "predicted": 8.967,
+            "residual": -0.967
+          },
+          {
+            "index": 41,
+            "actual": 13.0,
+            "predicted": 13.238,
+            "residual": -0.238
+          },
+          {
+            "index": 56,
+            "actual": 6.0,
+            "predicted": 8.526,
+            "residual": -2.526
+          },
+          {
+            "index": 50,
+            "actual": 11.0,
+            "predicted": 10.559,
+            "residual": 0.441
+          },
+          {
+            "index": 4,
+            "actual": 10.0,
+            "predicted": 10.894,
+            "residual": -0.894
+          },
+          {
+            "index": 88,
+            "actual": 5.0,
+            "predicted": 5.956,
+            "residual": -0.956
+          },
+          {
+            "index": 37,
+            "actual": 10.0,
+            "predicted": 11.14,
+            "residual": -1.14
+          },
+          {
+            "index": 12,
+            "actual": 8.0,
+            "predicted": 10.118,
+            "residual": -2.118
+          },
+          {
+            "index": 20,
+            "actual": 2.0,
+            "predicted": 2.306,
+            "residual": -0.306
+          },
+          {
+            "index": 15,
+            "actual": 5.0,
+            "predicted": 4.255,
+            "residual": 0.745
+          },
+          {
+            "index": 6,
+            "actual": 10.0,
+            "predicted": 9.762,
+            "residual": 0.238
+          },
+          {
+            "index": 128,
+            "actual": 6.0,
+            "predicted": 4.722,
+            "residual": 1.278
+          },
+          {
+            "index": 92,
+            "actual": 17.0,
+            "predicted": 17.277,
+            "residual": -0.277
+          },
+          {
+            "index": 26,
+            "actual": 7.0,
+            "predicted": 7.27,
+            "residual": -0.27
+          },
+          {
+            "index": 39,
+            "actual": 15.0,
+            "predicted": 12.433,
+            "residual": 2.567
+          },
+          {
+            "index": 117,
+            "actual": 13.0,
+            "predicted": 12.789,
+            "residual": 0.211
+          },
+          {
+            "index": 127,
+            "actual": 3.0,
+            "predicted": 5.079,
+            "residual": -2.079
+          },
+          {
+            "index": 126,
+            "actual": 1.0,
+            "predicted": 0.938,
+            "residual": 0.062
+          },
+          {
+            "index": 96,
+            "actual": 12.0,
+            "predicted": 7.593,
+            "residual": 4.407
+          },
+          {
+            "index": 91,
+            "actual": 12.0,
+            "predicted": 14.197,
+            "residual": -2.197
+          },
+          {
+            "index": 3,
+            "actual": 13.0,
+            "predicted": 12.391,
+            "residual": 0.609
+          },
+          {
+            "index": 106,
+            "actual": 8.0,
+            "predicted": 8.735,
+            "residual": -0.735
+          },
+          {
+            "index": 1,
+            "actual": 11.0,
+            "predicted": 12.132,
+            "residual": -1.132
+          },
+          {
+            "index": 78,
+            "actual": 7.0,
+            "predicted": 8.064,
+            "residual": -1.064
+          },
+          {
+            "index": 75,
+            "actual": 6.0,
+            "predicted": 6.244,
+            "residual": -0.244
+          },
+          {
+            "index": 114,
+            "actual": 6.0,
+            "predicted": 6.553,
+            "residual": -0.553
+          },
+          {
+            "index": 33,
+            "actual": 10.0,
+            "predicted": 9.336,
+            "residual": 0.664
+          },
+          {
+            "index": 27,
+            "actual": 16.0,
+            "predicted": 14.703,
+            "residual": 1.297
+          },
+          {
+            "index": 124,
+            "actual": 9.0,
+            "predicted": 10.123,
+            "residual": -1.123
+          },
+          {
+            "index": 79,
+            "actual": 4.0,
+            "predicted": 5.848,
+            "residual": -1.848
+          },
+          {
+            "index": 30,
+            "actual": 5.0,
+            "predicted": 6.288,
+            "residual": -1.288
+          },
+          {
+            "index": 47,
+            "actual": 10.0,
+            "predicted": 8.377,
+            "residual": 1.623
+          },
+          {
+            "index": 25,
+            "actual": 5.0,
+            "predicted": 4.288,
+            "residual": 0.712
+          },
+          {
+            "index": 84,
+            "actual": 7.0,
+            "predicted": 7.416,
+            "residual": -0.416
+          },
+          {
+            "index": 14,
+            "actual": 9.0,
+            "predicted": 10.957,
+            "residual": -1.957
+          },
+          {
+            "index": 105,
+            "actual": 13.0,
+            "predicted": 9.71,
+            "residual": 3.29
+          },
+          {
+            "index": 17,
+            "actual": 3.0,
+            "predicted": 1.887,
+            "residual": 1.113
+          },
+          {
+            "index": 100,
+            "actual": 10.0,
+            "predicted": 9.661,
+            "residual": 0.339
+          },
+          {
+            "index": 125,
+            "actual": 3.0,
+            "predicted": 5.927,
+            "residual": -2.927
+          },
+          {
+            "index": 71,
+            "actual": 8.0,
+            "predicted": 7.976,
+            "residual": 0.024
+          }
+        ],
+        "summary_metric": 0.8607
+      },
+      "features": [
+        "study_time_hours",
+        "absences",
+        "prior_grade_1",
+        "prior_grade_2",
+        "parent_education",
+        "internet_access",
+        "extra_tutoring"
+      ],
+      "model_path": "ml_engine/models/student_performance_model_1.0.0_1794202602.joblib",
+      "pipeline_path": "ml_engine/models/student_performance_model_1.0.0_1794202602_pipeline.joblib",
+      "created_at": "2026-11-09T05:36:42Z",
+      "total_inferences": 0
+    },
+    {
+      "model_id": "customer_churn_predictor_1.0.0_1794202838",
+      "model_name": "Customer Churn Predictor",
+      "version": "1.0.0",
+      "task_type": "classification",
+      "algorithm": "xgboost",
+      "stage": "archived",
+      "metrics": {
+        "accuracy": 0.68,
+        "precision": 0.6654,
+        "recall": 0.68,
+        "f1_score": 0.6717,
+        "roc_auc": 0.6655,
+        "confusion_matrix": [
+          {
+            "actual": "0",
+            "predicted": "0",
+            "count": 88
+          },
+          {
+            "actual": "0",
+            "predicted": "1",
+            "count": 21
+          },
+          {
+            "actual": "1",
+            "predicted": "0",
+            "count": 27
+          },
+          {
+            "actual": "1",
+            "predicted": "1",
+            "count": 14
+          }
+        ],
+        "confusion_matrix_raw": [
+          [
+            88,
+            21
+          ],
+          [
+            27,
+            14
+          ]
+        ],
+        "classification_report": {
+          "0": {
+            "precision": 0.7652173913043478,
+            "recall": 0.8073394495412844,
+            "f1-score": 0.7857142857142857,
+            "support": 109.0
+          },
+          "1": {
+            "precision": 0.4,
+            "recall": 0.34146341463414637,
+            "f1-score": 0.3684210526315789,
+            "support": 41.0
+          },
+          "accuracy": 0.68,
+          "macro avg": {
+            "precision": 0.5826086956521739,
+            "recall": 0.5744014320877154,
+            "f1-score": 0.5770676691729323,
+            "support": 150.0
+          },
+          "weighted avg": {
+            "precision": 0.6653913043478261,
+            "recall": 0.68,
+            "f1-score": 0.6716541353383458,
+            "support": 150.0
+          }
+        },
+        "summary_metric": 0.6717
+      },
+      "features": [
+        "tenure_months",
+        "contract_type",
+        "internet_service",
+        "tech_support",
+        "monthly_charges",
+        "total_charges"
+      ],
+      "model_path": "ml_engine/models/customer_churn_predictor_1.0.0_1794202838.joblib",
+      "pipeline_path": "ml_engine/models/customer_churn_predictor_1.0.0_1794202838_pipeline.joblib",
+      "created_at": "2026-11-09T05:40:38Z",
+      "total_inferences": 0
+    },
+    {
+      "model_id": "customer_churn_model_1.0.0_1794202929",
+      "model_name": "Customer Churn Model",
+      "version": "1.0.0",
+      "task_type": "classification",
+      "algorithm": "logistic_regression",
+      "stage": "staging",
+      "metrics": {
+        "accuracy": 0.7933,
+        "precision": 0.7817,
+        "recall": 0.7933,
+        "f1_score": 0.7823,
+        "roc_auc": 0.7608,
+        "confusion_matrix": [
+          {
+            "actual": "0",
+            "predicted": "0",
+            "count": 99
+          },
+          {
+            "actual": "0",
+            "predicted": "1",
+            "count": 10
+          },
+          {
+            "actual": "1",
+            "predicted": "0",
+            "count": 21
+          },
+          {
+            "actual": "1",
+            "predicted": "1",
+            "count": 20
+          }
+        ],
+        "confusion_matrix_raw": [
+          [
+            99,
+            10
+          ],
+          [
+            21,
+            20
+          ]
+        ],
+        "classification_report": {
+          "0": {
+            "precision": 0.825,
+            "recall": 0.908256880733945,
+            "f1-score": 0.8646288209606987,
+            "support": 109.0
+          },
+          "1": {
+            "precision": 0.6666666666666666,
+            "recall": 0.4878048780487805,
+            "f1-score": 0.5633802816901409,
+            "support": 41.0
+          },
+          "accuracy": 0.7933333333333333,
+          "macro avg": {
+            "precision": 0.7458333333333333,
+            "recall": 0.6980308793913628,
+            "f1-score": 0.7140045513254198,
+            "support": 150.0
+          },
+          "weighted avg": {
+            "precision": 0.7817222222222222,
+            "recall": 0.7933333333333333,
+            "f1-score": 0.7822875535600796,
+            "support": 150.0
+          }
+        },
+        "summary_metric": 0.7823
+      },
+      "features": [
+        "tenure_months",
+        "contract_type",
+        "internet_service",
+        "tech_support",
+        "monthly_charges",
+        "total_charges"
+      ],
+      "model_path": "ml_engine/models/customer_churn_model_1.0.0_1794202929.joblib",
+      "pipeline_path": "ml_engine/models/customer_churn_model_1.0.0_1794202929_pipeline.joblib",
+      "created_at": "2026-11-09T05:42:09Z",
+      "total_inferences": 0
+    },
+    {
+      "model_id": "customer_churn_model_1.0.0_1794202971",
+      "model_name": "Customer Churn Model",
+      "version": "1.0.0",
+      "task_type": "classification",
+      "algorithm": "logistic_regression",
+      "stage": "staging",
+      "metrics": {
+        "accuracy": 0.7933,
+        "precision": 0.7817,
+        "recall": 0.7933,
+        "f1_score": 0.7823,
+        "roc_auc": 0.7608,
+        "confusion_matrix": [
+          {
+            "actual": "0",
+            "predicted": "0",
+            "count": 99
+          },
+          {
+            "actual": "0",
+            "predicted": "1",
+            "count": 10
+          },
+          {
+            "actual": "1",
+            "predicted": "0",
+            "count": 21
+          },
+          {
+            "actual": "1",
+            "predicted": "1",
+            "count": 20
+          }
+        ],
+        "confusion_matrix_raw": [
+          [
+            99,
+            10
+          ],
+          [
+            21,
+            20
+          ]
+        ],
+        "classification_report": {
+          "0": {
+            "precision": 0.825,
+            "recall": 0.908256880733945,
+            "f1-score": 0.8646288209606987,
+            "support": 109.0
+          },
+          "1": {
+            "precision": 0.6666666666666666,
+            "recall": 0.4878048780487805,
+            "f1-score": 0.5633802816901409,
+            "support": 41.0
+          },
+          "accuracy": 0.7933333333333333,
+          "macro avg": {
+            "precision": 0.7458333333333333,
+            "recall": 0.6980308793913628,
+            "f1-score": 0.7140045513254198,
+            "support": 150.0
+          },
+          "weighted avg": {
+            "precision": 0.7817222222222222,
+            "recall": 0.7933333333333333,
+            "f1-score": 0.7822875535600796,
+            "support": 150.0
+          }
+        },
+        "summary_metric": 0.7823
+      },
+      "features": [
+        "tenure_months",
+        "contract_type",
+        "internet_service",
+        "tech_support",
+        "monthly_charges",
+        "total_charges"
+      ],
+      "model_path": "ml_engine/models/customer_churn_model_1.0.0_1794202971.joblib",
+      "pipeline_path": "ml_engine/models/customer_churn_model_1.0.0_1794202971_pipeline.joblib",
+      "created_at": "2026-11-09T05:42:51Z",
+      "total_inferences": 0
+    }
+  ]
+}
