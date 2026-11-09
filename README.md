@@ -16,9 +16,15 @@
 
 ---
 
-## ⚡ Quickstart (MacBook M2 / Apple Silicon / Intel)
+### 🌐 Live Public Deployment:
+* **Live Website (Cloud Deployed):** [https://predictai-pro.vercel.app](https://predictai-pro.vercel.app)
+* **GitHub Repository:** [https://github.com/Abhishek4-ui/cognevance_predictiveai](https://github.com/Abhishek4-ui/cognevance_predictiveai)
 
-A single command starts the entire system:
+---
+
+## ⚡ Local Quickstart (MacBook M2 / Apple Silicon / Intel)
+
+A single command starts the entire system locally:
 
 ```bash
 # 1. Open Terminal in the project root directory
@@ -35,9 +41,8 @@ This single command will:
 4. Launch the **React/Vite Frontend** on `http://127.0.0.1:5173`.
 5. Bootstrap all 9 benchmark datasets and pre-trained production models automatically.
 
-### Access URLs (When Server is Running):
-> **Note:** These are local links running on your machine. Start the server first with `./run_mac.sh` before opening these links in your browser!
-* **Web Application:** [http://127.0.0.1:5173](http://127.0.0.1:5173) (or [http://localhost:5173](http://localhost:5173))
+### Local Access URLs (When Running on Your Laptop):
+* **Local Web Application:** [http://127.0.0.1:5173](http://127.0.0.1:5173) (or [http://localhost:5173](http://localhost:5173))
 * **Interactive Swagger API Docs:** [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
 * **Default Admin Credentials:** `admin` / `PredictAIAdmin2026!`
 
