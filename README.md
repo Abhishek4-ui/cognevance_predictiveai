@@ -35,8 +35,9 @@ This single command will:
 4. Launch the **React/Vite Frontend** on `http://127.0.0.1:5173`.
 5. Bootstrap all 9 benchmark datasets and pre-trained production models automatically.
 
-### Access URLs:
-* **Web Application:** [http://127.0.0.1:5173](http://127.0.0.1:5173)
+### Access URLs (When Server is Running):
+> **Note:** These are local links running on your machine. Start the server first with `./run_mac.sh` before opening these links in your browser!
+* **Web Application:** [http://127.0.0.1:5173](http://127.0.0.1:5173) (or [http://localhost:5173](http://localhost:5173))
 * **Interactive Swagger API Docs:** [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
 * **Default Admin Credentials:** `admin` / `PredictAIAdmin2026!`
 
